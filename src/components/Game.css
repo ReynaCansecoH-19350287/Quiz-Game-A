@@ -1,0 +1,116 @@
+/* Style of Quiz Game */
+body {
+    background: #ffe2ff;
+}
+
+.game-container {
+    font-family: "Century Gothic", "Cambria", Arial, "Bell MT", Century;
+    margin: 0;
+    color: #fff;
+    background-color: #ffe2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+.game-container .app {
+    background-color: #d818a8;
+    width: 90%;
+    max-width: 600px;
+    min-width: 500px;
+    margin: 600 px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+  
+/* Questions */
+.game-container .lado-izquierdo {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+.game-container .pregunta-numero {
+    margin-bottom: 50px;
+}
+  
+.game-container .pregunta-numero span {
+    font-size: 40px;
+}
+  
+.game-container .pregunta-titulo {
+    margin-bottom: 20px;
+}
+  
+.game-container .lado-derecho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+/* Finalized */
+.game-container .juego-terminado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 40px;
+    align-items: center;
+}
+  
+/* General */
+.game-container button {
+    width: 100%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #d350c8;
+    border-radius: 18px;
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #f77bf0;
+    cursor: pointer;
+}
+  
+.game-container .tiempo-restante {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+  
+.game-container .correct,
+.game-container .correct:hover {
+    background-color: #229954;
+}
+  
+.game-container .incorrect,
+.game-container .incorrect:hover {
+    background-color: #E74C3C;
+}
+  
+.game-container .btns-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.game-container button:hover {
+    background-color: #8f1871;
+}
+  
+.game-container button[disabled] {
+    background-color: #ac2d8c;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+  
+.game-container button:focus {
+    outline: none;
+}
+  
+.game-container button svg {
+    margin-right: 5px;
+}
